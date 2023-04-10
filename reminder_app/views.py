@@ -16,5 +16,11 @@ def add_reminder(request):
         return redirect(add_reminder)
     return render(request, "add_reminder.html", {'form':AddReminder})
 
-def delete_reminder(request):
-    return HttpResponse("this is the delete response")
+def delete_reminder(request, reminder_id):
+    del_reminder = Reminder.objects.get(pk=reminder_id)
+    del_reminder.delete()
+    return redirect(index)
+
+def show_reminder(request, reminder_id):
+    show_reminder = Reminder.objects.get(pk=reminder_id)
+    return render(request, 'show_reminder.html', {'show_reminder':show_reminder})

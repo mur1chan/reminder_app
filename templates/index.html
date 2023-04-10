@@ -7,8 +7,14 @@
     <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">{{ reminder.title }}</h5>
+          <!-- Aktualisierter Titel-Link -->
+          <h5 class="card-title">
+            <a href="{% url 'show_reminder' reminder.id %}" class="text-decoration-none text-dark">{{ reminder.title }}</a>
+          </h5>
+          
           <p class="card-text">{{ reminder.description }}</p>
+          <!-- Löschlink hinzufügen -->
+          <a href="{% url 'delete_reminder' reminder.id %}" class="btn btn-danger">Löschen</a>
         </div>
         <div class="card-footer">
           <small class="text-muted">{{ reminder.date }} {{ reminder.time }}</small>
