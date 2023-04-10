@@ -17,4 +17,4 @@ My Reminder Project is a simple web application that allows users to create and 
 4. Click "Add Reminder" to save the reminder.
 
 ## Contributions
-If you've found any errors or have suggestions for improvements, you can send an email to myemail@example.com or submit a pull request on Github.
+If you've found any errors or have suggestions for improvements, you can submit a pull request on Github.
