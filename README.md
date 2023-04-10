@@ -16,5 +16,8 @@ My Reminder Project is a simple web application that allows users to create and 
 3. Enter a title, date and time, and an optional description.
 4. Click "Add Reminder" to save the reminder.
 
+## Example
+Here you can see how the website will look at the end:
+https://reminder.mur1chan.repl.co/reminder/
 ## Contributions
 If you've found any errors or have suggestions for improvements, you can submit a pull request on Github.
